@@ -1,4 +1,3 @@
-PADRE:
 
 CREATE TABLE Personas_InfoAdicional (
   persona_id INT64 NOT NULL,
@@ -8,8 +7,6 @@ CREATE TABLE Personas_InfoAdicional (
   institucion STRING(100),
   estado STRING(20)
 ) PRIMARY KEY(persona_id);
-
-HIJA:
 
 CREATE TABLE Personas (
   persona_id INT64 NOT NULL,
@@ -33,8 +30,9 @@ INSERT INTO Personas_InfoAdicional (persona_id, origen, actividad, distrito, ins
 INSERT INTO Personas (
   persona_id, nombres, apellidos, fecha_nacimiento, telefonos, correo
 ) VALUES
-(1, 'Luis', 'Martínez', DATE '2000-05-12', ['987654321', '912345678'], 'luis@gmail.com'),
-(2, 'Ana', 'Gómez', DATE '1998-11-20', ['923456789', '934567812'], 'ana.gomez@hotmail.com'),
-(3, 'Carlos', 'Ríos', DATE '2002-01-08', ['978123456'], 'carlosr@correo.com'),
-(4, 'Lucía', 'Fernández', DATE '1997-07-15', ['912345678', '988776655'], 'luciaf@gmail.com'),
-(5, 'José', 'Vega', DATE '1999-03-22', ['987654321'], 'jose.v@live.com');
+(1, 'Jhordan', 'Tapia', DATE '2001-04-03', ['937507475','948138671'], 'jhordantapiaespinoza@gmail.com'),
+(2, 'Rocio', 'Espinoza', DATE '1998-11-20', ['948138671', '934567812'], 'rocioea_11@hotmail.com'),
+(3, 'Harold', 'Tapia', DATE '1993-05-30', ['978123456'], 'haroldtapiaespinoza@gmail.com'),
+(4, 'Lucía', 'Fernández', DATE '1997-07-15', ['912345678'], 'luciaf@gmail.com'),
+(5, 'José', 'Vega', DATE '1999-03-22', ['987654321'], 'jose.v@gmail.com');
+
